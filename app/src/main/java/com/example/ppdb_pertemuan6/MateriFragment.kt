@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
+import android.widget.TextView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -37,6 +39,31 @@ class MateriFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_materi, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // hubungkan tiap baris materi dengan penjelasannya
+        setupMateri(view, R.id.row_materi_1, R.id.desc_materi_1)
+        setupMateri(view, R.id.row_materi_2, R.id.desc_materi_2)
+        setupMateri(view, R.id.row_materi_3, R.id.desc_materi_3)
+        setupMateri(view, R.id.row_materi_4, R.id.desc_materi_4)
+        setupMateri(view, R.id.row_materi_5, R.id.desc_materi_5)
+        setupMateri(view, R.id.row_materi_6, R.id.desc_materi_6)
+    }
+
+    private fun setupMateri(view: View, rowId: Int, descId: Int) {
+        val row: LinearLayout = view.findViewById(rowId)
+        val desc: TextView = view.findViewById(descId)
+
+        // buka atau tutup penjelasan saat baris diklik
+        row.setOnClickListener {
+            if (desc.visibility == View.GONE) {
+                desc.visibility = View.VISIBLE
+            } else {
+                desc.visibility = View.GONE
+            }
+        }
+    }
     companion object {
         /**
          * Use this factory method to create a new instance of
