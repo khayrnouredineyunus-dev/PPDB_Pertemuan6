@@ -3,4 +3,7 @@
     <string name="tab_text_1">Home</string>
     <string name="tab_text_2">Materi</string>
     <string name="tab_text_3">Quiz</string>
+    <string name="home_class_name">Praktikum Pengembangan Perangkat Bergerak</string>
+    <string name="home_class_desc">Mobile Development</string>
+    <string name="home_btn_materi">Lihat Materi</string>
 </resources>
