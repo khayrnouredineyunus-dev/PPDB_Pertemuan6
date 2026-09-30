@@ -13,4 +13,6 @@
     <string name="materi_4">Options Menu</string>
     <string name="materi_5">Fragment &amp; Navigasi</string>
     <string name="materi_6">Tab Layout &amp; ViewPager2</string>
+    <string name="quiz_empty_title">Quiz Belum Diadakan</string>
+    <string name="quiz_empty_desc">Nantikan quiz berikutnya di sini</string>
 </resources>

@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".QuizFragment">
-    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:alpha="0.7"
+        android:contentDescription="@string/quiz_empty_title"
+        android:src="@drawable/ic_empty_quiz"
+        app:tint="#536DFE" />
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Quiz" />
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/quiz_empty_title"
+        style="@style/CustomTextView18Bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/quiz_empty_desc" />
+
+</LinearLayout>
