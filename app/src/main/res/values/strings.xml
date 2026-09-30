@@ -6,4 +6,11 @@
     <string name="home_class_name">Praktikum Pengembangan Perangkat Bergerak</string>
     <string name="home_class_desc">Mobile Development</string>
     <string name="home_btn_materi">Lihat Materi</string>
+    <string name="materi_title">Daftar Materi</string>
+    <string name="materi_1">Pengenalan Android Studio &amp; Kotlin</string>
+    <string name="materi_2">Layout &amp; Component Dasar</string>
+    <string name="materi_3">Application Theme &amp; Styles</string>
+    <string name="materi_4">Options Menu</string>
+    <string name="materi_5">Fragment &amp; Navigasi</string>
+    <string name="materi_6">Tab Layout &amp; ViewPager2</string>
 </resources>
